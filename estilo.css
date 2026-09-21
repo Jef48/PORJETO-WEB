@@ -1,0 +1,211 @@
+/* 
+   Remove algumas margens padrão do navegador
+   e define uma fonte simples para toda a página.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* 
+   Estilo do cabeçalho.
+*/
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* Título principal */
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+/*
+   Área principal da página.
+*/
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* Título da seção */
+.destaques h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* Texto de introdução */
+.introducao {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/*
+   FLEXBOX
+
+   display: flex transforma os elementos filhos
+   em itens flexíveis.
+
+   flex-wrap: wrap permite que os cards
+   quebrem para outra linha em telas menores.
+
+   gap cria espaço entre os cards.
+*/
+.destaques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+/*
+   O título e a introdução devem ocupar
+   toda a largura da seção.
+*/
+.destaques h2,
+.destaques .introducao {
+    width: 100%;
+}
+
+
+/*
+   Cada card representa um destaque.
+*/
+.card {
+    background-color: white;
+
+    width: 30%;
+    min-width: 280px;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Título de cada card */
+.card h3 {
+    margin-bottom: 15px;
+}
+
+
+/* Texto da afirmação */
+.card p {
+    margin-bottom: 20px;
+}
+
+
+/*
+   Botão utilizado para mostrar a resposta.
+*/
+button {
+    background-color: #333;
+    color: white;
+
+    border: none;
+
+    padding: 12px 18px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    margin-top: auto;
+}
+
+
+/*
+   Quando o usuário passa o mouse
+   sobre o botão.
+*/
+button:hover {
+    background-color: #555;
+}
+
+
+/*
+   Resposta inicialmente escondida.
+*/
+.resposta {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background-color: #eeeeee;
+
+    border-left: 5px solid #333;
+
+    border-radius: 5px;
+}
+
+
+/*
+   Rodapé.
+*/
+footer {
+    text-align: center;
+
+    background-color: #222;
+
+    color: white;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+
+/*
+   RESPONSIVIDADE
+
+   Quando a tela tiver até 800px,
+   os cards ficam maiores.
+*/
+@media (max-width: 800px) {
+
+    .card {
+        width: 45%;
+    }
+
+}
+
+
+/*
+   Quando a tela tiver até 600px,
+   cada card ocupa praticamente
+   toda a largura.
+*/
+@media (max-width: 600px) {
+
+    .card {
+        width: 100%;
+    }
+
+}

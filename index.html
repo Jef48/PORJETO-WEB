@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define que o documento usa caracteres como ç, ã e é -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a celulares, tablets e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Mitos e Verdades - Racismo nos Esportes</title>
+
+    <!-- Liga o arquivo HTML ao arquivo de estilos CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho principal da página -->
+    <header>
+        <h1>Verificação de Fatos</h1>
+        <p>Racismo estrutural nos esportes</p>
+    </header>
+
+    <!-- Área principal do conteúdo -->
+    <main>
+
+        <!-- Título da seção de destaques -->
+        <section class="destaques">
+
+            <h2>Destaques: Mitos e Verdades</h2>
+
+            <p class="introducao">
+                Leia cada afirmação e clique no botão para conhecer
+                a explicação.
+            </p>
+
+            <!-- Primeiro destaque -->
+            <article class="card">
+
+                <!-- Título do card -->
+                <h3>Mito 1</h3>
+
+                <p>
+                    “Se existem atletas negros de destaque,
+                    não existe racismo no esporte.”
+                </p>
+
+                <!-- Botão que será utilizado pelo JavaScript -->
+                <button onclick="mostrarResposta(1)">
+                    Ver resposta
+                </button>
+
+                <!-- Resposta inicialmente escondida -->
+                <div id="resposta1" class="resposta">
+                    <strong>MITO.</strong>
+                    A presença de atletas negros em posições de destaque
+                    não significa que todas as pessoas tenham as mesmas
+                    oportunidades. O racismo estrutural pode aparecer em
+                    diferentes instituições, práticas e oportunidades
+                    dentro e fora do esporte.
+                </div>
+
+            </article>
+
+
+            <!-- Segundo destaque -->
+            <article class="card">
+
+                <h3>Verdade 2</h3>
+
+                <p>
+                    “O racismo no esporte pode estar relacionado
+                    às oportunidades oferecidas aos atletas.”
+                </p>
+
+                <button onclick="mostrarResposta(2)">
+                    Ver resposta
+                </button>
+
+                <div id="resposta2" class="resposta">
+                    <strong>VERDADE.</strong>
+                    Desigualdades podem aparecer no acesso a espaços de
+                    treinamento, recursos, formação, patrocínio,
+                    cargos de liderança e outras oportunidades.
+                    Por isso, analisar apenas a quantidade de atletas
+                    negros em campo não é suficiente para compreender
+                    toda a questão.
+                </div>
+
+            </article>
+
+
+            <!-- Terceiro destaque -->
+            <article class="card">
+
+                <h3>Mito 3</h3>
+
+                <p>
+                    “Racismo no esporte acontece somente quando
+                    alguém utiliza uma ofensa racial.”
+                </p>
+
+                <button onclick="mostrarResposta(3)">
+                    Ver resposta
+                </button>
+
+                <div id="resposta3" class="resposta">
+                    <strong>MITO.</strong>
+                    Ofensas raciais são uma forma de racismo, mas o
+                    problema também pode envolver práticas discriminatórias,
+                    desigualdade de oportunidades e sub-representação
+                    em determinadas posições e espaços de decisão.
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Projeto educativo - Desenvolvimento Web</p>
+    </footer>
+
+
+    <!-- Liga o arquivo JavaScript à página -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
